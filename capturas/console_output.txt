@@ -1,0 +1,126 @@
+REGISTRO DE ESTUDIANTES
+=====================
+Ingrese legajo del estudiante: 
+Ingrese nombre y apellido del estudiante: 
+Desea crear otro estudiante S/N?
+Ingrese legajo del estudiante: 
+Ingrese nombre y apellido del estudiante: 
+Desea crear otro estudiante S/N?
+REGISTRO DE EVENTOS
+=====================
+Ingrese un título para el evento: 
+Ingrese el costo base: 
+El evento tendra costo para los participantes S/N?
+Inicializador estático: se cargo la clase EventoUniversitario.
+Ingrese el nombre de la sala: 
+REGISTRO DE ACTIVIDADES
+=====================
+Ingrese el titulo de la actividad: 
+Ingrese el cupo máximo de la actividad: 
+La actividad es una charla, un taller o un curso?
+Ingrese el nombre del disertante para la charla
+Inicializador estático: se cargó la clase Actividad
+Desea crear otra actividad S/N?
+Ingrese el titulo de la actividad: 
+Ingrese el cupo máximo de la actividad: 
+La actividad es una charla, un taller o un curso?
+Requiere uso de Notebooks? S/N
+Desea crear otra actividad S/N?
+Ingrese el titulo de la actividad: 
+Ingrese el cupo máximo de la actividad: 
+La actividad es una charla, un taller o un curso?
+Ingrese el nivel del curso (1, 2 o 3): 
+Desea crear otra actividad S/N?
+INSCRIPCIÓN DE ESTUDIANTES
+=====================
+Ingrese legajo del estudiante a inscribir: 
+Ingrese id de la actividad: 
+Desea confirmar esta inscripción (se emitirá un ticket de acceso)? S/N
+Ticket generado para la inscripción: TICKET-1-E12345-1790369323997
+Desea generar otra inscripción? S/N
+Ingrese legajo del estudiante a inscribir: 
+Ingrese id de la actividad: 
+Desea confirmar esta inscripción (se emitirá un ticket de acceso)? S/N
+Ticket generado para la inscripción: TICKET-2-E67890-1790369324019
+Desea generar otra inscripción? S/N
+--- Evento original ---
+==============================================================
+Evento Codigo: EVT-1
+Titulo: Evento de Prueba TP2
+Costo: 9680.0
+Sala: Aula Magna
+------------------------------------------------------------
+Actividades: 
+[1] modelo.actividades.Charla: Charla de Bienvenida - Cupo: 5
+Inscripciones registradas: 
+ 2026-09-25 - CONFIRMADA - Juan Perez (Legajo: E12345)
+[2] modelo.actividades.Taller: Taller de Java - Cupo: 2
+Inscripciones registradas: 
+ 2026-09-25 - CONFIRMADA - Maria Gomez (Legajo: E67890)
+[3] modelo.actividades.Curso: Curso de POO - Cupo: 3
+Sin inscripciones registradas
+------------------------------------------------------------
+==============================================================
+--- Evento recuperado desde archivo (caso exitoso) ---
+==============================================================
+Evento Codigo: EVT-1
+Titulo: Evento de Prueba TP2
+Costo: 9680.0
+Sala: Aula Magna
+------------------------------------------------------------
+Actividades: 
+[1] modelo.actividades.Charla: Charla de Bienvenida - Cupo: 5
+Inscripciones registradas: 
+ 2026-09-25 - CONFIRMADA - Juan Perez (Legajo: E12345)
+[2] modelo.actividades.Taller: Taller de Java - Cupo: 2
+Inscripciones registradas: 
+ 2026-09-25 - CONFIRMADA - Maria Gomez (Legajo: E67890)
+[3] modelo.actividades.Curso: Curso de POO - Cupo: 3
+Sin inscripciones registradas
+------------------------------------------------------------
+==============================================================
+Flujo de persistencia (persistir/recuperar) finalizado.
+Error 01: No se encontró el archivo del evento: evento_ID-INEXISTENTE.dat (No such file or directory)
+EMISIÓN DE CERTIFICADOS
+=====================
+CERTIFICADOS EMITIDOS PARA LA ACTIVIDAD Taller de Java
+Certificado emitido por UTN - FRM: se deja constancia de que Maria Gomez participó en el taller "Taller de Java".
+CERTIFICADOS EMITIDOS PARA LA ACTIVIDAD Curso de POO
+FILTRADO DE ACTIVIDADES POR TIPO
+=====================
+Charlas encontradas: 1
+Talleres encontrados: 1
+Cursos encontrados: 1
+Costo de materiales de charlas: $0.0
+Costo de materiales de talleres: $5000.0
+Costo de materiales de cursos: $2000.0
+Costo de materiales de todas las actividades: $7000.0
+ENVÍO DE TICKETS DE ACCESO (proceso concurrente)
+=====================
+[Hilo-Envio-Tickets] Inicio del envío de tickets.
+Enviando ticket TICKET-1-E12345-1790369323997 al estudiante Juan Perez para la actividad Charla de Bienvenida
+[Hilo-Principal] Mientras se envían los tickets, sigo mostrando datos del evento:
+==============================================================
+Evento Codigo: EVT-1
+Titulo: Evento de Prueba TP2
+Costo: 9680.0
+Sala: Aula Magna
+------------------------------------------------------------
+Actividades: 
+[1] modelo.actividades.Charla: Charla de Bienvenida - Cupo: 5
+Inscripciones registradas: 
+ 2026-09-25 - CONFIRMADA - Juan Perez (Legajo: E12345)
+[2] modelo.actividades.Taller: Taller de Java - Cupo: 2
+Inscripciones registradas: 
+ 2026-09-25 - CONFIRMADA - Maria Gomez (Legajo: E67890)
+[3] modelo.actividades.Curso: Curso de POO - Cupo: 3
+Sin inscripciones registradas
+------------------------------------------------------------
+==============================================================
+[Hilo-Principal] Actividad: Charla de Bienvenida - Estudiantes inscriptos: 1
+[Hilo-Principal] Actividad: Taller de Java - Estudiantes inscriptos: 1
+[Hilo-Principal] Actividad: Curso de POO - Estudiantes inscriptos: 0
+Enviando ticket TICKET-2-E67890-1790369324019 al estudiante Maria Gomez para la actividad Taller de Java
+[Hilo-Envio-Tickets] Fin del envío de tickets.
+Desea crear otro evento S/N?
+TOTAL DE EVENTOS CREADOS: 1
